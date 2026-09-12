@@ -3,46 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WOODS FLEET CLEARANCE | All Must Go – Cash Only</title>
+<title>WOODS FLEET CLEARANCE | 6 Trucks & SUVs | Cash Only | All Must Go</title>
+<meta name="description" content="Sell entire woods fleet of classic Ramcharger, GMC Yukon Denali, Yukon XL, Dodge Ram, custom shortbed & Ford Windstar. Cash buyers wanted. Bulk deals preferred.">
+<meta name="keywords" content="sell trucks, cash for cars, GMC Yukon, Dodge Ramcharger, project trucks, fleet sale">
 <style>
+  :root {
+    --bg: #050505;
+    --card: #111;
+    --red: #ff1a1a;
+    --green: #00ff88;
+    --text: #f5f5f5;
+    --muted: #999;
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: system-ui, -apple-system, sans-serif; background: #0a0a0a; color: #f0f0f0; line-height: 1.5; }
-  .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1494976388531-d10584930316?auto=format&fit=crop&w=1600') center/cover; padding: 80px 20px; text-align: center; }
-  h1 { font-size: clamp(2.2rem, 6vw, 4rem); font-weight: 900; letter-spacing: -1px; margin-bottom: 12px; text-transform: uppercase; }
-  .tag { display: inline-block; background: #ff2d2d; color: white; padding: 6px 16px; font-weight: 700; border-radius: 4px; margin-bottom: 20px; }
-  .sub { font-size: 1.25rem; opacity: 0.9; max-width: 700px; margin: 0 auto 30px; }
-  .cta { display: inline-block; background: #00ff88; color: #000; font-weight: 800; padding: 16px 36px; border-radius: 6px; text-decoration: none; font-size: 1.1rem; transition: transform 0.15s; }
-  .cta:hover { transform: scale(1.05); }
-  .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 30px; }
-  .card { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; overflow: hidden; transition: border-color 0.2s; }
-  .card:hover { border-color: #00ff88; }
-  .card-body { padding: 20px; }
-  .card h3 { font-size: 1.3rem; margin-bottom: 8px; }
-  .price { color: #00ff88; font-weight: 800; font-size: 1.4rem; margin: 10px 0; }
-  .status { font-size: 0.85rem; color: #aaa; }
-  section { margin: 60px 0; }
-  h2 { font-size: 1.8rem; margin-bottom: 20px; border-left: 4px solid #ff2d2d; padding-left: 12px; }
-  .buyers { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
-  .buyer { background: #1a1a1a; padding: 18px; border-radius: 8px; border: 1px solid #333; }
-  .buyer a { color: #00ff88; font-weight: 600; text-decoration: none; }
-  form { background: #161616; padding: 30px; border-radius: 12px; max-width: 500px; }
-  input, textarea, select { width: 100%; padding: 12px; margin: 8px 0 16px; background: #0d0d0d; border: 1px solid #333; color: white; border-radius: 6px; font-size: 1rem; }
-  button { background: #ff2d2d; color: white; border: none; padding: 14px 28px; font-weight: 700; border-radius: 6px; cursor: pointer; width: 100%; font-size: 1.1rem; }
-  button:hover { background: #e02626; }
-  footer { text-align: center; padding: 40px 20px; border-top: 1px solid #222; margin-top: 60px; color: #666; }
-  .credit { color: #00ff88; font-weight: 600; }
+  body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; }
+  .hero {
+    background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.92) 100%),
+                url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800') center/cover;
+    padding: 70px 20px 90px; text-align: center; position: relative; overflow: hidden;
+  }
+  .tag {
+    display: inline-block; background: var(--red); color: #fff; font-weight: 800;
+    padding: 8px 18px; border-radius: 4px; font-size: 0.9rem; letter-spacing: 1px;
+    margin-bottom: 18px; text-transform: uppercase;
+  }
+  h1 {
+    font-size: clamp(2.4rem, 7vw, 4.4rem); font-weight: 900; letter-spacing: -1.5px;
+    line-height: 1.05; margin-bottom: 16px; text-transform: uppercase;
+  }
+  .sub { font-size: 1.2rem; max-width: 720px; margin: 0 auto 28px; opacity: 0.92; }
+  .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .cta {
+    display: inline-block; background: var(--green); color: #000; font-weight: 800;
+    padding: 16px 32px; border-radius: 6px; text-decoration: none; font-size: 1.1rem;
+    transition: all 0.15s; border: none; cursor: pointer;
+  }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,255,136,0.35); }
+  .cta-outline {
+    background: transparent; color: var(--green); border: 2px solid var(--green);
+  }
+  .urgency {
+    margin-top: 28px; font-size: 0.95rem; color: #ffcc00; font-weight: 600;
+  }
+  .container { max-width: 1140px; margin: 0 auto; padding: 50px 20px; }
+  section { margin-bottom: 70px; }
+  h2 {
+    font-size: 1.9rem; margin-bottom: 22px; border-left: 5px solid var(--red);
+    padding-left: 14px; font-weight: 800;
+  }
+  .package {
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    border: 2px solid var(--green); border-radius: 14px; padding: 32px;
+    text-align: center; margin-bottom: 50px; position: relative;
+  }
+  .package::before {
+    content: "BEST DEAL"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--green); color: #000; font-weight: 900; padding: 4px 16px;
+    border-radius: 20px; font-size: 0.8rem; letter-spacing: 1px;
+  }
+  .package h3 { font-size: 1.8rem; margin-bottom: 10px; }
+  .package .big-price { font-size: 2.6rem; font-weight: 900; color: var(--green); margin: 12px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+  .card {
+    background: var(--card); border: 1px solid #222; border-radius: 12px;
+    overflow: hidden; transition: all 0.2s; display: flex; flex-direction: column;
+  }
+  .card:hover { border-color: var(--green); transform: translateY(-4px); }
+  .card-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
+  .card h3 { font-size: 1.25rem; margin-bottom: 6px; }
+  .price { color: var(--green); font-weight: 800; font-size: 1.45rem; margin: 10px 0; }
+  .status { font-size: 0.82rem; color: var(--muted); margin-top: auto; padding-top: 12px; }
+  .buyers { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .buyer {
+    background: #141414; padding: 20px; border-radius: 10px; border: 1px solid #2a2a2a;
+  }
+  .buyer strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+  .buyer a { color: var(--green); font-weight: 600; text-decoration: none; }
+  .buyer a:hover { text-decoration: underline; }
+  form {
+    background: #121212; padding: 32px; border-radius: 14px; max-width: 540px;
+    border: 1px solid #2a2a2a;
+  }
+  label { display: block; font-weight: 600; margin-bottom: 4px; font-size: 0.95rem; }
+  input, textarea, select {
+    width: 100%; padding: 13px 14px; margin-bottom: 16px; background: #0a0a0a;
+    border: 1px solid #333; color: white; border-radius: 7px; font-size: 1rem;
+  }
+  input:focus, textarea:focus, select:focus { outline: none; border-color: var(--green); }
+  button[type="submit"] {
+    background: var(--red); color: white; border: none; padding: 16px; font-weight: 800;
+    border-radius: 7px; cursor: pointer; width: 100%; font-size: 1.15rem; letter-spacing: 0.5px;
+  }
+  button[type="submit"]:hover { background: #e00; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+  .step { background: #141414; padding: 22px; border-radius: 10px; text-align: center; }
+  .step-num {
+    width: 36px; height: 36px; background: var(--red); color: white; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-weight: 900;
+    margin: 0 auto 12px; font-size: 1.1rem;
+  }
+  footer {
+    text-align: center; padding: 50px 20px; border-top: 1px solid #1a1a1a;
+    color: #666; font-size: 0.95rem;
+  }
+  .credit { color: var(--green); font-weight: 700; }
+  .share { margin-top: 30px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .share a {
+    background: #1a1a1a; color: white; padding: 10px 18px; border-radius: 6px;
+    text-decoration: none; font-weight: 600; border: 1px solid #333;
+  }
+  .share a:hover { border-color: var(--green); color: var(--green); }
+  @media (max-width: 600px) {
+    .hero { padding: 50px 16px 70px; }
+    .package { padding: 24px 18px; }
+  }
 </style>
 </head>
 <body>
   <div class="hero">
-    <div class="tag">CASH ONLY • NO LOWBALLS • BULK DEALS WELCOME</div>
-    <h1>Woods Fleet Clearance</h1>
-    <p class="sub">Six hard-used American trucks & SUVs sleeping in the trees. Titles available where noted. First serious cash takes them.</p>
-    <a href="#inquiry" class="cta">MAKE FAST OFFER →</a>
+    <div class="tag">CASH ONLY • NO LOWBALLS • BULK PRIORITY</div>
+    <h1>Woods Fleet<br>Clearance</h1>
+    <p class="sub">Six hard-used American trucks & SUVs have been sleeping in the trees long enough. First serious cash takes them. Entire lot preferred.</p>
+    <div class="cta-row">
+      <a href="#package" class="cta">TAKE THE WHOLE FLEET</a>
+      <a href="#inquiry" class="cta cta-outline">MAKE AN OFFER</a>
+    </div>
+    <p class="urgency">⚡ Serious buyers only • Titles where available • As-is condition</p>
   </div>
 
   <div class="container">
+    <!-- BULK PACKAGE -->
+    <section id="package">
+      <div class="package">
+        <h3>ENTIRE FLEET PACKAGE</h3>
+        <p style="opacity:0.9;max-width:500px;margin:0 auto;">All 6 vehicles. One transaction. One pickup. Maximum speed for both sides.</p>
+        <div class="big-price">$11,000 – $15,500</div>
+        <p style="font-size:0.95rem;color:#aaa;margin-bottom:20px;">Negotiable for fast cash + clean removal</p>
+        <a href="#inquiry" class="cta">CLAIM THE LOT NOW →</a>
+      </div>
+    </section>
+
+    <!-- INVENTORY -->
     <section>
       <h2>Current Inventory</h2>
       <div class="grid">
@@ -50,138 +151,197 @@
           <div class="card-body">
             <h3>Dodge Ramcharger</h3>
             <div class="price">$1,800 – $2,800</div>
-            <p>Classic square-body SUV. Heavy surface rust + patina. Woods survivor. Project / resto-mod / parts gold.</p>
-            <div class="status">Status: As-is • Title status TBD</div>
+            <p>Classic square-body SUV. Heavy surface rust + real patina. Perfect project, resto-mod base, or parts donor. Woods survivor energy.</p>
+            <div class="status">As-is • Title status TBD</div>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <h3>GMC Yukon Denali (Black)</h3>
             <div class="price">$3,500 – $5,500</div>
-            <p>2nd-gen Denali. Dirty from the trees but solid body. Premium interior potential.</p>
-            <div class="status">Status: As-is</div>
+            <p>2nd-gen Denali. Tree dirt on the outside, solid bones underneath. Premium interior potential once cleaned.</p>
+            <div class="status">As-is</div>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <h3>GMC Yukon XL (Maroon)</h3>
             <div class="price">$2,800 – $4,500</div>
-            <p>Full-size XL. Surface dirt + leaves. Big family / work hauler.</p>
-            <div class="status">Status: As-is</div>
+            <p>Full-size XL. Surface leaves & dirt. Big hauler for family, work, or conversion projects.</p>
+            <div class="status">As-is</div>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <h3>Ford Windstar / Freestar</h3>
             <div class="price">$800 – $1,500</div>
-            <p>Beige minivan. Tinted glass, roof rack. Cheap people mover or parts.</p>
-            <div class="status">Status: As-is</div>
+            <p>Beige minivan with tinted glass + roof rack. Cheap people-mover or parts source.</p>
+            <div class="status">As-is</div>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <h3>Dodge Ram Pickup</h3>
             <div class="price">$1,200 – $2,200</div>
-            <p>Older square-body style Ram. Rusted hood, bed equipment. Classic work truck bones.</p>
-            <div class="status">Status: As-is</div>
+            <p>Older square-body style Ram. Rusted hood, some bed equipment still on it. Classic work truck DNA.</p>
+            <div class="status">As-is</div>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <h3>Custom Red/Purple Shortbed</h3>
             <div class="price">$2,000 – $3,500</div>
-            <p>Flamed / claw paint, lowered, short bed. Wild street truck. Cat optional.</p>
-            <div class="status">Status: As-is • Viral potential</div>
+            <p>Flamed / claw paint job, lowered, short bed. Wild street truck. Viral potential. Cat currently on guard.</p>
+            <div class="status">As-is • High attention magnet</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- HOW IT WORKS -->
     <section>
-      <h2>US Companies That Buy This Exact Stuff Fast</h2>
-      <p style="margin-bottom:20px;opacity:0.85">These outfits buy running, non-running, rusty, high-mile, and bulk fleets nationwide. They are the fastest path to cash.</p>
-      <div class="buyers">
-        <div class="buyer">
-          <strong>CarBuyerUSA</strong><br>
-          Buys everything, any condition, all 50 states.<br>
-          <a href="https://www.carbuyerusa.com" target="_blank">carbuyerusa.com →</a>
+      <h2>How This Works (Fastest Path)</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <strong>Submit Offer</strong><br>
+          <span style="font-size:0.9rem;color:#aaa;">Use the form below or contact the cash buyers listed</span>
         </div>
-        <div class="buyer">
-          <strong>Clunker.pro</strong><br>
-          Cash for cars & trucks, free towing, any condition.<br>
-          <a href="https://clunker.pro" target="_blank">clunker.pro →</a>
+        <div class="step">
+          <div class="step-num">2</div>
+          <strong>Agree on Price</strong><br>
+          <span style="font-size:0.9rem;color:#aaa;">Cash talks. Bulk deals get priority response</span>
         </div>
-        <div class="buyer">
-          <strong>EZGo Fleet</strong><br>
-          Bulk fleet buyouts, 5–5000 vehicles, nationwide pickup.<br>
-          <a href="https://www.ezgofleet.com" target="_blank">ezgofleet.com →</a>
-        </div>
-        <div class="buyer">
-          <strong>CarBrain</strong><br>
-          Strong on Yukons / GMC / less-than-perfect SUVs.<br>
-          <a href="https://carbrain.com" target="_blank">carbrain.com →</a>
-        </div>
-        <div class="buyer">
-          <strong>CashForCars / SMASH network</strong><br>
-          Instant offers, free pickup, running or not.<br>
-          <a href="https://cashforcars-usa.com" target="_blank">cashforcars-usa.com →</a>
-        </div>
-        <div class="buyer">
-          <strong>Local Wholesale + Facebook Marketplace</strong><br>
-          Post the whole fleet as one lot for maximum speed.
+        <div class="step">
+          <div class="step-num">3</div>
+          <strong>Pickup & Pay</strong><br>
+          <span style="font-size:0.9rem;color:#aaa;">You arrange transport. We clear the woods</span>
         </div>
       </div>
     </section>
 
+    <!-- BUYERS -->
+    <section>
+      <h2>US Companies Built for This Exact Inventory</h2>
+      <p style="margin-bottom:22px;opacity:0.85;max-width:700px;">These companies buy running, non-running, rusty, high-mile, and full fleets nationwide. They are the nuclear option for speed.</p>
+      <div class="buyers">
+        <div class="buyer">
+          <strong>CarBuyerUSA</strong>
+          Buys everything in any condition. All 50 states.<br>
+          <a href="https://www.carbuyerusa.com" target="_blank" rel="noopener">carbuyerusa.com →</a>
+        </div>
+        <div class="buyer">
+          <strong>Clunker.pro</strong>
+          Cash for cars & trucks + free towing.<br>
+          <a href="https://clunker.pro" target="_blank" rel="noopener">clunker.pro →</a>
+        </div>
+        <div class="buyer">
+          <strong>EZGo Fleet</strong>
+          Bulk fleet buyouts (5+ units). Nationwide logistics.<br>
+          <a href="https://www.ezgofleet.com" target="_blank" rel="noopener">ezgofleet.com →</a>
+        </div>
+        <div class="buyer">
+          <strong>CarBrain</strong>
+          Strong on GMC Yukons and less-than-perfect SUVs.<br>
+          <a href="https://carbrain.com" target="_blank" rel="noopener">carbrain.com →</a>
+        </div>
+        <div class="buyer">
+          <strong>CashForCars / SMASH</strong>
+          Instant offers. Running or not. Free pickup.<br>
+          <a href="https://cashforcars-usa.com" target="_blank" rel="noopener">cashforcars-usa.com →</a>
+        </div>
+        <div class="buyer">
+          <strong>Local Wholesale + Marketplace</strong>
+          Post the full lot on Facebook Marketplace + Craigslist for max local speed.
+        </div>
+      </div>
+    </section>
+
+    <!-- INQUIRY FORM -->
     <section id="inquiry">
-      <h2>Fastest Inquiry Form</h2>
-      <p style="margin-bottom:20px">Serious buyers only. Cash offers preferred. Bulk deals get priority.</p>
-      <form onsubmit="handleSubmit(event)">
-        <label>Your Name</label>
-        <input type="text" id="name" required placeholder="Name or company">
-        <label>Phone or Email</label>
-        <input type="text" id="contact" required placeholder="Best way to reach you">
+      <h2>Fastest Inquiry / Offer Form</h2>
+      <p style="margin-bottom:20px;opacity:0.9;">Serious cash offers only. Bulk package gets first response.</p>
+      <form id="offerForm" onsubmit="handleSubmit(event)">
+        <label>Your Name or Company</label>
+        <input type="text" name="name" id="name" required placeholder="Name or company name">
+        
+        <label>Phone or Email (best contact)</label>
+        <input type="text" name="contact" id="contact" required placeholder="Phone preferred for speed">
+        
         <label>Which vehicle(s)?</label>
-        <select id="vehicle">
-          <option>Entire Fleet (preferred)</option>
-          <option>Ramcharger</option>
-          <option>Black Denali</option>
-          <option>Yukon XL</option>
-          <option>Windstar</option>
-          <option>Old Ram Pickup</option>
-          <option>Custom Red/Purple</option>
+        <select name="vehicle" id="vehicle">
+          <option value="Entire Fleet (preferred)">Entire Fleet (preferred)</option>
+          <option value="Ramcharger">Dodge Ramcharger</option>
+          <option value="Black Denali">Black GMC Yukon Denali</option>
+          <option value="Yukon XL">Maroon GMC Yukon XL</option>
+          <option value="Windstar">Ford Windstar / Freestar</option>
+          <option value="Old Ram Pickup">Dodge Ram Pickup</option>
+          <option value="Custom Red/Purple">Custom Red/Purple Shortbed</option>
         </select>
-        <label>Your Cash Offer ($)</label>
-        <input type="number" id="offer" placeholder="Serious number only">
-        <label>Message</label>
-        <textarea id="msg" rows="3" placeholder="Title status, pickup timeline, anything else"></textarea>
+        
+        <label>Your Cash Offer (USD)</label>
+        <input type="number" name="offer" id="offer" placeholder="Serious number only" min="100">
+        
+        <label>Message / Notes</label>
+        <textarea name="message" id="msg" rows="3" placeholder="Title questions, pickup window, anything else"></textarea>
+        
         <button type="submit">SEND OFFER NOW</button>
       </form>
-      <p id="thanks" style="display:none;margin-top:20px;color:#00ff88;font-weight:700;">Offer locked in. Owner will contact you. Cash talks.</p>
+      <p id="thanks" style="display:none;margin-top:22px;color:var(--green);font-weight:800;font-size:1.15rem;">
+        ✅ Offer locked. Owner will contact you. Cash moves metal.
+      </p>
     </section>
+
+    <!-- SHARE -->
+    <div class="share">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://woods-fleet-sale-appycatcherbot-s-projects.vercel.app" target="_blank">Share on Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Woods%20Fleet%20Clearance%20-%206%20trucks%20%26%20SUVs%20for%20cash&url=https://woods-fleet-sale-appycatcherbot-s-projects.vercel.app" target="_blank">Share on X</a>
+      <a href="mailto:?subject=Woods%20Fleet%20Clearance&body=Check%20this%20out:%20https://woods-fleet-sale-appycatcherbot-s-projects.vercel.app">Email Link</a>
+    </div>
   </div>
 
   <footer>
-    <p>Built for maximum speed • Credit: <span class="credit">@appycody58-byte</span> on GitHub</p>
-    <p style="margin-top:8px;font-size:0.9rem;">Repo: <a href="https://github.com/appycody58-byte/woods-fleet-sale" style="color:#00ff88;">github.com/appycody58-byte/woods-fleet-sale</a></p>
+    <p>Built for maximum velocity • Full credit: <span class="credit">@appycody58-byte</span></p>
+    <p style="margin-top:8px;">
+      <a href="https://github.com/appycody58-byte/woods-fleet-sale" style="color:var(--green);">github.com/appycody58-byte/woods-fleet-sale</a>
+    </p>
+    <p style="margin-top:16px;font-size:0.85rem;opacity:0.7;">As-is sale. Buyer responsible for transport & title transfer. Local laws apply.</p>
   </footer>
 
   <script>
     function handleSubmit(e) {
       e.preventDefault();
       const data = {
-        name: document.getElementById('name').value,
-        contact: document.getElementById('contact').value,
+        name: document.getElementById('name').value.trim(),
+        contact: document.getElementById('contact').value.trim(),
         vehicle: document.getElementById('vehicle').value,
         offer: document.getElementById('offer').value,
-        msg: document.getElementById('msg').value,
-        time: new Date().toISOString()
+        message: document.getElementById('msg').value.trim(),
+        time: new Date().toISOString(),
+        source: 'Woods Fleet Clearance Site'
       };
-      console.log('OFFER RECEIVED:', data);
-      // In real deploy this would hit a webhook / Formspree / Supabase / email
+
+      // Log for now + show success
+      console.log('NEW OFFER:', data);
+
+      // Visual feedback
       document.getElementById('thanks').style.display = 'block';
       e.target.reset();
-      alert('Offer submitted. Owner notified. Cash only moves these trucks.');
+
+      // Optional: open mail client as backup (user can replace with real Formspree/Web3Forms later)
+      const subject = encodeURIComponent('Woods Fleet Offer - ' + data.vehicle);
+      const body = encodeURIComponent(
+        'Name: ' + data.name + '\n' +
+        'Contact: ' + data.contact + '\n' +
+        'Vehicle: ' + data.vehicle + '\n' +
+        'Offer: $' + data.offer + '\n' +
+        'Message: ' + data.message + '\n' +
+        'Time: ' + data.time
+      );
+      // Uncomment next line if you want mailto fallback:
+      // window.location.href = 'mailto:YOUR_EMAIL@example.com?subject=' + subject + '&body=' + body;
+
+      alert('Offer submitted. Cash talks. Owner will respond to serious numbers.');
     }
   </script>
 </body>
